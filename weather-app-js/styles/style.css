@@ -1,0 +1,56 @@
+.every {
+  margin-bottom: 3vh;
+}
+
+.every .everyTime .time {
+  font-size: calc(0.6rem + 1.5vw);
+  min-width: 20vw;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.every .everyHour .hours {
+  font-size: calc(0.6rem + 1.5vw);
+  min-width: 20vw;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.additionalInfo #AInfo {
+  border-bottom: 1px solid #1650a8;
+  display: inline;
+  font-size: calc(1rem + 1.1vw);
+}
+
+.additionalInfo :nth-child(n) {
+  font-size: calc(0.6rem + 1.5vw);
+}
+
+.additionalInfo :nth-child(2) {
+  margin-top: 1vh;
+}
+
+.additionalInfo {
+  margin-bottom: 4vh;
+}
+
+.tomorrow {
+  margin-bottom: 2vh;
+}
+
+.tomorrow .tomorrowCaption {
+  font-size: calc(1rem + 1.1vw);
+  border-bottom: 1px solid #1650a8;
+  display: inline;
+}
+
+.tomorrow .minTemperature {
+  font-size: calc(0.6rem + 1.5vw);
+}
+
+.tomorrow .maxTemperature {
+  font-size: calc(0.6rem + 1.5vw);
+}
+/*# sourceMappingURL=style.css.map */

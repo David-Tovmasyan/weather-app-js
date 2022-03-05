@@ -1,0 +1,53 @@
+$evFSize:calc(0.6rem + 1.5vw);
+$evMWidth:20vw;
+$distanceBetweenComponents: 3vh;
+$mFSize:calc(1rem + 1.1vw);
+$bBValue:1px solid rgb(22, 80, 168);
+.every{
+    margin-bottom: $distanceBetweenComponents;
+}
+
+.every .everyTime .time{
+    font-size: $evFSize;
+    min-width: $evMWidth;
+    display: grid;
+    place-content: center;
+}
+.every .everyHour .hours{
+    font-size: $evFSize;
+    min-width: $evMWidth;
+    display: grid;
+    place-content: center;
+}
+.additionalInfo #AInfo{
+    border-bottom: $bBValue;
+    display: inline;
+    font-size: $mFSize;
+}
+.additionalInfo :nth-child(n){
+    font-size: $evFSize;
+}
+.additionalInfo :nth-child(2){
+    margin-top: 1vh;
+}
+.additionalInfo{
+    margin-bottom: 4vh;
+}
+
+.tomorrow{
+    margin-bottom: 2vh;
+    .tomorrowCaption{
+    font-size: $mFSize;
+    border-bottom: $bBValue;
+    display: inline;
+    }
+    .minTemperature{
+        font-size: $evFSize;
+    }
+    .maxTemperature{
+        font-size: $evFSize;
+        
+    }
+}
+
+
