@@ -1,5 +1,0 @@
-handle errors when there is no city or it can't fetch 
-make hourly part(5 hours)
-make next 5 days 
-make additional part
-make design
