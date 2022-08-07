@@ -39,7 +39,7 @@ async function getUserLocation(lat, lng) {
         return
     }
     let data = await res.json();
-    getCurrentData(data.results[0].locations[0].adminArea5) //uxarkum enq qaxaqi anun@
+    getCurrentData(data.results[0].locations[0].adminArea5) //sending city name
     getHourlyData(data.results[0].locations[0].adminArea5)
 }
 
@@ -96,7 +96,7 @@ function getTomorrowData(data) {
     let tempInfo = [];
     let weatherInfo = [];
     let weatherType = "";
-    for (let i = 1; i < data.length; i++) { // We can write 9 instead of data.length
+    for (let i = 1; i < data.length; i++) { 
         if (getOnlyTime(data[i].dt_txt) == "00:00") {
             TomorrowStartIndex = i;
             break;
@@ -110,7 +110,7 @@ function getTomorrowData(data) {
     return [Math.min(...tempInfo), Math.max(...tempInfo)];
 }
 
-//zamayin code-ic vercnum a menak zam@ 
+//taking only hours
 function getOnlyTime(time) {
     let fullTime = time.split(" ")[1];
     if (typeof fullTime == "string") {
